@@ -156,11 +156,9 @@ fun Greeting2(name: String, modifier: Modifier = Modifier) {
                                         .padding(8.dp)
                                 ) {
                                     Column(modifier = Modifier.align(Alignment.CenterEnd)) {
-                                        Text(
-                                            text = "Move to Bin",
-                                            textAlign = TextAlign.Center,
-                                            fontWeight = FontWeight.Bold,
-                                            color = Color.LightGray
+                                        Image(
+                                            painter = painterResource(id = R.drawable.close),
+                                            contentDescription = null,
                                         )
                                     }
                                 }
