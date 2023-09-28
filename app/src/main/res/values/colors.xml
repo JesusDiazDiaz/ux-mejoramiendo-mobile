@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#F2542D</color>
+    <color name="primaryContainer">#FBC9BD</color>
+    <color name="secondary">#562C2C</color>
+    <color name="secondaryContainer">#E0C3C3</color>
+    <color name="tertiary">#F5DFBB</color>
+    <color name="tertiaryContainer">#EECA8F</color>
+
+    <color name="surface">#FEFBF6</color>
+    <color name="surfaceHigh">#FCF4E7</color>
+    <color name="surfaceHighest">#F9EDD9</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

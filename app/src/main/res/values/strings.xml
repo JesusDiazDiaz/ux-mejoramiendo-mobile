@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Wireframe Orange</string>
+    <string name="orange_content_description">logo</string>
+    <string name="title_activity_home">HomeActivity</string>
+</resources>
