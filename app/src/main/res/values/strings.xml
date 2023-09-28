@@ -2,4 +2,7 @@
     <string name="app_name">Wireframe Orange</string>
     <string name="orange_content_description">logo</string>
     <string name="title_activity_home">HomeActivity</string>
+    <string name="title_activity_add_alarm">AddAlarmActivity</string>
+    <string name="title_activity_pomodoro">PomodoroActivity</string>
+    <string name="title_activity_pomodoro_stop">PomodoroStopActivity</string>
 </resources>

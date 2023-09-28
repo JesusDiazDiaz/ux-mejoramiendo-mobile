@@ -13,6 +13,21 @@
         android:theme="@style/Theme.WireframeOrange"
         tools:targetApi="31">
         <activity
+            android:name=".PomodoroStopActivity"
+            android:exported="false"
+            android:label="@string/title_activity_pomodoro_stop"
+            android:theme="@style/Theme.WireframeOrange" />
+        <activity
+            android:name=".PomodoroActivity"
+            android:exported="false"
+            android:label="@string/title_activity_pomodoro"
+            android:theme="@style/Theme.WireframeOrange" />
+        <activity
+            android:name=".AddAlarmActivity"
+            android:exported="false"
+            android:label="@string/title_activity_add_alarm"
+            android:theme="@style/Theme.WireframeOrange" />
+        <activity
             android:name=".HomeActivity"
             android:exported="false"
             android:label="@string/title_activity_home"
