@@ -1,6 +1,7 @@
 package com.example.wireframeorange
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -77,6 +78,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.draw.scale
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import com.example.wireframeorange.ui.theme.PrimaryContainer
@@ -104,6 +106,7 @@ class HomeActivity : ComponentActivity() {
 fun Greeting2(name: String, modifier: Modifier = Modifier) {
     var state by remember { mutableStateOf(0) }
     var items = mutableListOf(1)
+    val context = LocalContext.current
 
     Column(
         verticalArrangement = Arrangement.SpaceBetween,
@@ -121,7 +124,9 @@ fun Greeting2(name: String, modifier: Modifier = Modifier) {
             Image(
                 painter = painterResource(id = R.drawable.card),
                 contentDescription = stringResource(id = R.string.orange_content_description),
-                modifier = Modifier.clickable { }
+                modifier = Modifier.clickable {
+                    context.startActivity(Intent(context, AddAlarmActivity::class.java))
+                }
             )
             Spacer(modifier = Modifier.height(16.dp))
             LazyColumn(horizontalAlignment = Alignment.CenterHorizontally)  {
@@ -192,7 +197,9 @@ fun Greeting2(name: String, modifier: Modifier = Modifier) {
                     selectedContentColor = SurfaceHigh,
                     unselectedContentColor = Color.Black,
                     selected = false,
-                    onClick = {  },
+                    onClick = {
+                        context.startActivity(Intent(context, PomodoroActivity::class.java))
+                    },
                     text = { Text(text = "Pomodoro", maxLines = 2, overflow = TextOverflow.Ellipsis) }
                 )
                 Tab(
